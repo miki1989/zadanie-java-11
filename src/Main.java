@@ -33,6 +33,10 @@ public class Main {
             System.out.println("Punkt (" + x + "," + y +") leży w IV cwiartce układu współrzędnych");
             break;
         }
+        while (x == 0 && y == 0){
+            System.out.println("Punkt (" + x + "," + y +") nie leży w żadnej z ćwiartek układu współrzędnych");
+            break;
+        }
 
         scan.close();
     }
