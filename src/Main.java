@@ -16,26 +16,21 @@ public class Main {
         System.out.println("Podaj Y");
         y = scan.nextInt();
 
-        while (x > 0 && y > 0){
+        if(x > 0 && y > 0){
             System.out.println("Punkt (" + x + "," + y +") leży w I cwiartce układu współrzędnych");
-            break;
         }
 
-        while (x < 0 && y > 0){
+        else if (x < 0 && y > 0){
             System.out.println("Punkt (" + x + "," + y +") leży w II cwiartce układu współrzędnych");
-            break;
         }
-        while (x < 0 && y < 0){
+        else if (x < 0 && y < 0){
             System.out.println("Punkt (" + x + "," + y +") leży w III cwiartce układu współrzędnych");
-            break;
         }
-        while (x > 0 && y < 0){
+        else if (x > 0 && y < 0){
             System.out.println("Punkt (" + x + "," + y +") leży w IV cwiartce układu współrzędnych");
-            break;
         }
-        while (x == 0 && y == 0){
+        else if (x == 0 && y == 0){
             System.out.println("Punkt (" + x + "," + y +") nie leży w żadnej z ćwiartek układu współrzędnych");
-            break;
         }
 
         scan.close();
